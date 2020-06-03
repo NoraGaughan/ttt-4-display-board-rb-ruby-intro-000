@@ -1,12 +1,11 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-rows = ("   |   |   ")
 def display_board(board)
-  expect(rows[0]).to eq("   |   |   ")
-      expect(rows[1]).to eq("-----------")
-      expect(rows[2]).to eq("   |   |   ")
-      expect(rows[3]).to eq("-----------")
-      expect(rows[4]).to eq("   |   |   ")
+separator = "|"
+lines = "-----------"
+
+puts " #{board[0]} #{separator} #{board[1]} #{separator} #{board[2]} "
+puts "#{lines}"
+puts " #{board[3]} #{separator} #{board[4]} #{separator} #{board[5]} "
+puts "#{lines}"
+puts " #{board[6]} #{separator} #{board[7]} #{separator} #{board[8]} "
 end
-output = capture_puts{ display_board(board) }
-      rows = output.split("\n")
-      
