@@ -1,4 +1,5 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+rows = ("   |   |   ")
 def display_board(board)
   expect(rows[0]).to eq("   |   |   ")
       expect(rows[1]).to eq("-----------")
